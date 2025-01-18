@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accessibility page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <!--Navbar code inspired from w3schools Responsive Top Navbar link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+        <nav class="navbar" id="myNavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">About us</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="booking.html#booktable">Booking</a></li>
+                <li><a href="Topical.html">Topical</a></li>
+                <li><a href="Accessibility.html">Accessibility</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction(this)">
+                    <i class="fa fa-bars"></i>
+                </a></li>
+            </ul>
+        </nav>
+        <div id="accessibilitypage">
+            <h1>Accessibility page</h1>
+            <p>To begin with we checked our code on <a href="https://validator.w3.org/">validator</a> to see if we may have missed any closings.</p>
+            
+            <p>We as a group have worked together to make a site that is easy, smooth, and simple for the reader 
+                to get the information needed and at times see it visually with pictures.
+            </p>
+            
+            <p> We chose strong contrasts between font colors, background colors, and a big enough font-size 
+                in order to make the text stand out as well as being aesthetically pleasing. 
+                Further we have a sticky navigation bar and a "book your table button", available on all 
+                pages at all times. The button serves as an easy access for anyone to book the table faster without 
+                having to figure out what and where to look in order to get a booking form. 
+                The navigation bar makes it easier in general to have a good overview of our site. 
+                Our booking forms have a hover effect, to make it clear which input box is in use at that moment. 
+                The filling forms do not have a time limit, considering that some people might need more time to type. 
+            </p>
+            
+            <p>On the homepage we chose to have a hover effect on buttons as well as a black border around to make it stand out. 
+                We used grid on homepage, menu and topical to make the content look more put together and easy to navigate around.
+                We checked that the tab button worked as it should, so that it tabbed through in the right order, something that is 
+                important for those who don't use a mouse or a touchpad for any reason.
+                On the menu page we have icons for vegetarian meals, to make it more noticeable. For allergies we have put together a thicker font, 
+                different color, and a different background color for a more clear distinction between the allergy part and the rest of the page.
+            </p>
+
+            <p> We did a test using the website <a href="https://www.toptal.com/designers/colorfilter">Colorblind Web Page Filter</a> to check that 
+                anybody with colorblind disabilities can navigate through our site easily.
+            </p>
+
+            <img src="Images/Full test1.png" alt="full test with colorblind">
+            <img src="Images/Full test2.png" alt="full test">
+
+
+        </div>
+        <footer>
+            <p><a href="#top">To the top of the page</a></p>
+        </footer>
+        <!--JavaScript code from w3schools Responsive Top Navbar link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav-->
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        </script>
+    </body>
+</html>
